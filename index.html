@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Studio</title>
+    <link rel="shortcut icon" href="images/banner-camera.png" type="image/x-icon">
+
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/23b13db498.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- Tailwind custom css -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    'bg-color1': '#0f2027',
+                    'bg-color2': '#203a43',
+                    'bg-color3': '#2c5364',
+                    'primary-color': '#e02c6d',
+                    'btn-color1': '#290325',
+                    'btn-color2': '#902c5d',
+                }
+            }
+        }
+    }
+</script>
+
+<!-- css class -->
+<style>
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .background-image {
+        background-image: url(images/Circle\ design.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+
+    .bg-image {
+        background-image: url(images/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+
+
+<body class="font-poppins bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3">
+
+    <!-- header section -->
+    <header class="mx-5">
+        <!-- Nav section -->
+        <nav class=" container mx-auto ">
+            <div>
+                <div
+                    class="navbar bg-base-100 bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 rounded-xl py-5 shadow-xl">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-white bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3">
+                                <li><a>Home</a></li>
+                                <li><a>Products</a></li>
+                                <li><a>Sign up</a></li>
+                                <li><a>Log In</a></li>
+                                <li>
+                                    <button class="btn btn-ghost btn-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                                        <div class="indicator">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+                                            <span class="badge badge-sm indicator-item">8</span>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="text-3xl font-extrabold text-white ">Influencer <span class="text-primary-color">
+                                products
+                            </span></a>
+                    </div>
+                    <div class="navbar-end hidden lg:flex text-5xl font-extrabold">
+                        <ul class="menu menu-horizontal px-1 text-white">
+                            <li><a>Home</a></li>
+                            <li><a>Products</a></li>
+                            <li><a>Sign up</a></li>
+                            <li><a>Log In</a></li>
+                            <li>
+                                <button class="btn btn-ghost btn-circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <label tabindex="0" class="btn btn-ghost btn-circle">
+                                    <div class="indicator">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                        <span class="badge badge-sm indicator-item">8</span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Banner section -->
+        <section class=" container mx-auto">
+            <div class="py-20">
+                <div>
+                    <div class="flex flex-col lg:flex-row gap-20">
+                        <div class="w-full flex flex-col justify-center">
+                            <h1 class="text-5xl lg:text-6xl font-bold text-primary-color text-center lg:text-start">
+                                Start your Journey as <br>
+                                Influencer</h1>
+                            <p class="py-6 text-white text-center lg:text-start">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Sem <br>
+                                vestibulum
+                                sed
+                                scelerisque eros. Lectus faucibus.</p>
+                            <div class="flex justify-center lg:justify-start">
+                                <button
+                                    class="btn w-48 bg-gradient-to-r from-btn-color1 to-btn-color2 text-white border-0">Preebook
+                                    now</button>
+                            </div>
+                        </div>
+
+                        <div class="background-image p-28">
+                            <img class="w-full" src="images/banner-camera.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- Main section -->
+    <main>
+        <!-- First section -->
+        <section class="bg-image">
+            <div class="mx-5">
+                <div class="flex flex-col lg:flex-row gap-10 mt-24 container mx-auto">
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <div>
+                            <h1 class="text-4xl text-center lg:text-start font-extrabold my-6 text-primary-color">
+                                Featured
+                                products at
+                                one place</h1>
+                            <p class=" text-white text-center lg:text-start">Amet minim mollit non deserunt ullamco est
+                                sit
+                                aliqua dolor do amet sint.
+                                Velit officia consequat duis enim velit
+                                mollit.Exercitation veniam consequat
+                                sunt nostrud amet.
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit officia consequat duis enim velit
+                                mollit.
+                            </p>
+                            <div class="flex justify-center lg:justify-start">
+                                <button
+                                    class="btn w-48 bg-gradient-to-r from-btn-color1 to-btn-color2 text-white border-0 my-5">Join
+                                    Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" shadow-2xl flex-1">
+                        <img class="p-20 w-full rounded-2xl" src="images/do-more.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- link section -->
+        <section class="container mx-auto">
+            <div class="mx-5">
+                <div
+                    class="flex flex-wrap justify-center py-10 gap-10  lg:gap-32 bg-gradient-to-r from-btn-color1 to-btn-color2 rounded-2xl shadow-xl mt-24">
+                    <a href=""><img src="logos/Alibaba.svg" alt=""></a>
+                    <a href=""><img src="logos/Amazon.svg" alt=""></a>
+                    <a href=""><img src="logos/Daraz.pk Logo.svg" alt=""></a>
+                    <a href=""><img src="logos/Ebay.svg" alt=""></a>
+                    <a href=""><img src="logos/Rakuten.svg" alt=""></a>
+                    <a href=""><img src="logos/Walmart.svg" alt=""></a>
+                    <a href=""><img src="logos/Target.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Collection section -->
+        <section class="container mx-auto">
+            <div class="mx-5">
+                <div class="mt-24">
+                    <div class="mt-24">
+                        <div class="mb-20">
+                            <h1 class="text-4xl font-extrabold text-center my-6 text-primary-color">Popular
+                                Collection</h1>
+                            <p class="text-center text-white">This is a wider card with supporting text below as a
+                                natural
+                                lead-in
+                                to
+                                additional content. <br> This
+                                card
+                                has even longer
+                                content than the first to show that equal height action.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card section -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+
+                        <!-- card-1 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/tripod.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Flex Tripod</h2>
+                                <p class=" text-3xl text-white">$50.48</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- card-2 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/mic.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Microphone</h2>
+                                <p class=" text-3xl text-white">$120.25</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- card-3 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/airpod.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Airbuds</h2>
+                                <p class=" text-3xl text-white">$100.00</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- card-4 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/drone.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Drone</h2>
+                                <p class=" text-3xl text-white">$980.25</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- card-5 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/lights.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Light Setup</h2>
+                                <p class=" text-3xl text-white">$1200.00</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- card-6 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/setup.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Photo shoot set</h2>
+                                <p class=" text-3xl text-white">$820.40</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- card-7 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/camera.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Vlogging Camera</h2>
+                                <p class=" text-3xl text-white">$1800.80</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- card-8 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/single-light.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Green Screen</h2>
+                                <p class=" text-3xl text-white">$25.48</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- card-9 -->
+                        <div class="card bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 shadow-2xl">
+                            <figure>
+                                <img class="w-full m-5" src="images/action.png" alt="Shoes" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="text-4xl font-bold text-white">Action Camera</h2>
+                                <p class=" text-3xl text-white">$380.00</p>
+
+                                <!-- rating -->
+                                <div class="rating rating-md">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"
+                                        checked />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                    <p class="ml-4 text-white">4.99</p>
+                                </div>
+
+                                <p class="text-white">Wordwide shifting <br> available
+                                    Buyers protection <br> possible!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured products at one place section -->
+        <section class="container mx-auto">
+            <div class="mx-5">
+                <div class="flex flex-col lg:flex-row gap-10 mt-24">
+                    <div class="bg-gradient-to-r from-bg-color1 to-bg-color2 rounded-2xl p-5 shadow-2xl flex-1">
+                        <img class="w-full" src="images/gear.png" alt="">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center items-center">
+                        <div>
+                            <h1 class="text-4xl text-center lg:text-start font-extrabold my-6 text-primary-color">
+                                Featured
+                                products at
+                                one place</h1>
+                            <p class=" text-white text-center lg:text-start">Amet minim mollit non deserunt ullamco est
+                                sit
+                                aliqua dolor do amet sint.
+                                Velit officia consequat duis enim velit
+                                mollit.Exercitation veniam consequat
+                                sunt nostrud amet.
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit officia consequat duis enim velit
+                                mollit.
+                            </p>
+                            <p class=" text-white text-center lg:text-start">Exercitation veniam consequat sunt nostrud
+                                amet.
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit officia consequat duis enim velit
+                                mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            <div class="flex justify-center lg:justify-start">
+                                <button
+                                    class="btn w-48 bg-gradient-to-r from-btn-color1 to-btn-color2 text-white border-0 my-5">Join
+                                    Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="bg-gradient-to-r from-btn-color1 to-btn-color2 mt-24 py-14 md:py-24 lg:py-28">
+        <div class="flex gap-5 justify-center">
+            <img src="images/logo.png" alt="">
+            <h2 class="text-4xl text-white font-bold flex items-center">Influencer products</h2>
+        </div>
+        <div class="flex justify-center my-16 mx-10">
+            <ul class="text-white flex flex-wrap justify-center gap-6 lg:gap-20">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Popular Collection</a></li>
+                <li><a href="">Featured products</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">My Account</a></li>
+            </ul>
+        </div>
+        <div class="flex justify-center mt-14">
+            <ul class="text-white flex flex-wrap gap-6 lg:gap-16 justify-center">
+                <li><a href="https://www.google.com/"><i class="fa-brands fa-twitter text-4xl"></i></a></li>
+                <li><a href="https://www.google.com/"><i class="fa-brands fa-facebook text-4xl"></i></a></li>
+                <li><a href="https://www.google.com/"><i class="fa-brands fa-youtube text-4xl"></i></a></li>
+                <li><a href="https://www.google.com/"><i class="fa-brands fa-linkedin text-4xl"></i></a></li>
+                <li><a href="https://www.google.com/"><i class="fa-brands fa-instagram text-4xl"></i></a></li>
+                <li><a href="https://www.google.com/"><i class="fa-brands fa-apple text-4xl"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
