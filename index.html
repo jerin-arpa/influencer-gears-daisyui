@@ -73,10 +73,10 @@
     <!-- header section -->
     <header class="mx-5">
         <!-- Nav section -->
-        <nav class=" container mx-auto ">
-            <div>
-                <div
-                    class="navbar bg-base-100 bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3 rounded-xl py-5 shadow-xl">
+        <nav class=" bg-base-100 bg-gradient-to-r from-bg-color1 to-bg-color2 to-bg-color3">
+            <div class=" container mx-auto">
+                <div class="navbar py-5">
+
                     <div class="navbar-start">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -92,39 +92,25 @@
                                 <li><a>Products</a></li>
                                 <li><a>Sign up</a></li>
                                 <li><a>Log In</a></li>
-                                <li>
-                                    <button class="btn btn-ghost btn-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                        </svg>
-                                    </button>
-                                </li>
-                                <li>
-                                    <label tabindex="0" class="btn btn-ghost btn-circle">
-                                        <div class="indicator">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                                            </svg>
-                                            <span class="badge badge-sm indicator-item">8</span>
-                                        </div>
-                                    </label>
-                                </li>
                             </ul>
                         </div>
-                        <a class="text-3xl font-extrabold text-white ">Influencer <span class="text-primary-color">
+                        <a class="text-xl md:text-2xl lg:text-3xl font-extrabold text-white ">Influencer <span
+                                class="text-primary-color">
                                 products
                             </span></a>
                     </div>
-                    <div class="navbar-end hidden lg:flex text-5xl font-extrabold">
+
+                    <div class="navbar-center hidden lg:flex text-5xl font-extrabold">
                         <ul class="menu menu-horizontal px-1 text-white">
                             <li><a>Home</a></li>
                             <li><a>Products</a></li>
                             <li><a>Sign up</a></li>
                             <li><a>Log In</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navbar-end">
+                        <ul class="flex text-white">
                             <li>
                                 <button class="btn btn-ghost btn-circle">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
@@ -157,7 +143,7 @@
         <section class=" container mx-auto">
             <div class="py-20">
                 <div>
-                    <div class="flex flex-col lg:flex-row gap-20">
+                    <div class="flex flex-col-reverse lg:flex-row gap-20">
                         <div class="w-full flex flex-col justify-center">
                             <h1 class="text-5xl lg:text-6xl font-bold text-primary-color text-center lg:text-start">
                                 Start your Journey as <br>
@@ -174,8 +160,8 @@
                             </div>
                         </div>
 
-                        <div class="background-image p-28">
-                            <img class="w-full" src="images/banner-camera.png" />
+                        <div class="background-image p-14">
+                            <img class="animate-bounce" src="images/banner-camera.png" />
                         </div>
                     </div>
                 </div>
@@ -189,7 +175,7 @@
         <!-- First section -->
         <section class="bg-image">
             <div class="mx-5">
-                <div class="flex flex-col lg:flex-row gap-10 mt-24 container mx-auto">
+                <div class="flex flex-col lg:flex-row gap-10 mt-14 container mx-auto">
                     <div class="flex-1 flex flex-col justify-center items-center">
                         <div>
                             <h1 class="text-4xl text-center lg:text-start font-extrabold my-6 text-primary-color">
@@ -215,7 +201,7 @@
                         </div>
                     </div>
                     <div class=" shadow-2xl flex-1">
-                        <img class="p-20 w-full rounded-2xl" src="images/do-more.jpg" alt="">
+                        <img class="py-20 w-full rounded-2xl" src="images/do-more.jpg" alt="">
                     </div>
                 </div>
             </div>
